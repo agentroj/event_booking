@@ -124,6 +124,8 @@ python manage.py createsuperuser
 # API Endpoints and Sample Payloads
 
 ## User Registration and Authentication
+### Description: 
+API for user management specifically to create users.
 
 ### POST /api/users/
 Request:
@@ -145,6 +147,9 @@ Response:
 ```
 
 ## Venue Management
+
+### Description:
+Endpoint for Creation, Updating and fetching Venue data: 
 
 ### POST /api/venues/
 Request:
@@ -205,6 +210,9 @@ Response:
 ```
 ## Event Management
 
+### Description:
+Endpoint for Creation, Updating and fetching Event data: 
+
 ### POST /api/events/
 Request:
 ```
@@ -246,6 +254,9 @@ Response:
 ```
 
 ## Booking Management
+
+### Description:
+Endpoint for Creation, Updating, Cancelling and fetching Booking data: 
 
 ### POST /api/bookings/
 Request:
@@ -294,6 +305,10 @@ Response:
 ```
 
 ## User Booking History
+
+### Description:
+Endpoint for Creation, Updating, Cancelling and fetching Booking history: 
+
 ### GET /api/users/1/booking-history/
 
 Response:
