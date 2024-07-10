@@ -1,9 +1,13 @@
 import pytest
 from django.urls import reverse
-from rest_framework import status
-from rest_framework.test import APIClient
-import dotenv
-dotenv.load_dotenv()
+import os
+import django
+from django.conf import settings # noqa
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'event_booking.settings')
+django.setup()
+from rest_framework import status # noqa
+from rest_framework.test import APIClient # noqa
 
 
 @pytest.mark.django_db
