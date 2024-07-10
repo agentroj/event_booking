@@ -13,6 +13,7 @@ This repository contains the backend system for an Event Booking Platform, built
 6. [Scalability and Performance](#scalability-and-performance)
 7. [Security Considerations](#security-considerations)
 8. [Postman Collection](#postman-collection)
+9. [Testing and Quality Assurance](#testing-and-quality-assurance)
 
 ## Local Environment Setup
 
@@ -473,7 +474,23 @@ You can find the Postman collection to test the API endpoints in the repository.
 https://github.com/agentroj/event_booking/blob/master/postman_collection.json
 
 
+## Testing and Quality Assurance
 
+### Flake8 Code Linting
+
+Ensure code quality and adherence to style guidelines using Flake8:
+
+```
+flake8 --count --ignore=E402,W503 .
+```
+
+### pytest Scenarios
+
+Test API endpoints and application functionality using pytest:
+
+```
+pytest
+```
 
 
 
