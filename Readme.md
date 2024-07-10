@@ -10,6 +10,9 @@ This repository contains the backend system for an Event Booking Platform, built
 3. [Database Migration and Superuser Creation](#database-migration-and-superuser-creation)
 4. [API Endpoints and Sample Payloads](#api-endpoints-and-sample-payloads)
 5. [Database Schema](#database-schema)
+6. [Scalability and Performance](#scalability-and-performance)
+7. [Security Considerations](#security-considerations)
+8. [Postman Collection](#postman-collection)
 
 ## Local Environment Setup
 
