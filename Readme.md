@@ -9,6 +9,7 @@ This repository contains the backend system for an Event Booking Platform, built
 2. [Environment Variables](#environment-variables)
 3. [Database Migration and Superuser Creation](#database-migration-and-superuser-creation)
 4. [API Endpoints and Sample Payloads](#api-endpoints-and-sample-payloads)
+5. [Database Schema](#database-schema)
 
 ## Local Environment Setup
 
@@ -319,7 +320,7 @@ and provides sample payloads and responses for the API endpoints.
 
 
 
-Database Schema:
+# Database Schema:
 ![image](https://github.com/agentroj/event_booking/assets/37651790/6501d983-b509-4734-b52f-a83688e89ef7)
 
 
