@@ -455,7 +455,7 @@ def create_user(username, email, password):
 # Postman Collection
 You can find the Postman collection to test the API endpoints in the repository. Import the postman_collection.json file into Postman to get started.
 
-[Uploading postman_collection.json…]()
+https://github.com/agentroj/event_booking/blob/master/postman_collection.json
 
 
 
