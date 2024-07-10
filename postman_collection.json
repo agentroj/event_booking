@@ -1,0 +1,268 @@
+{
+    "info": {
+      "name": "Event Booking Platform",
+      "_postman_id": "12345-abcde-67890-fghij",
+      "description": "Collection for testing Event Booking Platform API endpoints",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "User Registration",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"johndoe\",\n  \"email\": \"johndoe@example.com\",\n  \"password\": \"password123\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/api/users/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "users"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Venue",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Conference Hall\",\n  \"location\": \"123 Main St\",\n  \"capacity\": 200,\n  \"facilities\": \"WiFi, Projector\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/api/venues/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "venues"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Venue",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/venues/1/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "venues",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Venue",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Updated Conference Hall\",\n  \"location\": \"123 Main St\",\n  \"capacity\": 250,\n  \"facilities\": \"WiFi, Projector, Sound System\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/api/venues/1/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "venues",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Event",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Tech Conference\",\n  \"description\": \"A conference about the latest in tech.\",\n  \"date\": \"2024-08-01\",\n  \"time\": \"10:00:00\",\n  \"venue\": 1,\n  \"capacity\": 200\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/api/events/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "events"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Event",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/1/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "events",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Booking",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"user\": 1,\n  \"event\": 1\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/api/bookings/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "bookings"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Booking",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/bookings/1/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "bookings",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Cancel Booking",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/bookings/1/cancel/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "bookings",
+              "1",
+              "cancel"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "View User Booking History",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/users/1/booking-history/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "api",
+              "users",
+              "1",
+              "booking-history"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
