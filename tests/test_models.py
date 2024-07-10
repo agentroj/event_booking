@@ -1,6 +1,9 @@
 import pytest
 from django.contrib.auth.models import User
 from booking.models import Venue, Event, Booking
+import dotenv
+
+dotenv.load_dotenv()
 
 
 @pytest.mark.django_db
